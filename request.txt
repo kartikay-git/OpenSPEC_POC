@@ -1,0 +1,19 @@
+Propose adding an optional --name command-line argument to source/hello.py.
+
+Required behavior:
+1. Without arguments, print "Hello, World!" followed by a newline.
+2. With --name Alice, print "Hello, Alice!" followed by a newline.
+3. With --name "Ada Lovelace", preserve the space in the supplied name.
+4. If --name is supplied without a value, exit with a nonzero status
+   and print a useful error to stderr.
+
+Use Python's standard library. No additional application dependencies.
+
+Create:
+- A change proposal.
+- Behavioral specifications with testable scenarios.
+- A technical design.
+- Unchecked implementation tasks, including testing tasks.
+
+Do not implement the change.
+Do not execute source code.
