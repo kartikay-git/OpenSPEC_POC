@@ -73,7 +73,9 @@ def connect_model():
             api_key=api_key,
             timeout=timeout,
             max_tokens=max_tokens,
-            max_retries=1,
+            max_retries=int(
+                os.getenv("LLM_MAX_RETRIES", "6")
+            ),
         )
 
     raise ValueError(
